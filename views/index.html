@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+
+  <title>Shoes Store</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed:wght@700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+
+<body>
+  <h1>Shoes Store</h1>
+
+  {% for shoe in all_shoes %}
+
+  <div class="shoe">
+    <img src="{{ shoe.photo_url }}" />
+    <div class="shoe-content">
+      <h3><a href="/shoes/{{ shoe.id }}">{{ shoe.title }}</a></h3>
+      <p>{{ shoe.description }}</p>
+    </div>
+  </div>
+
+  {% endfor %}
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+}
+
+a {
+  color: rgb(15, 15, 15);
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 2px solid rgb(15, 15, 15);
+}
+
+.shoe {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(248, 248, 248);
+  margin-bottom: 40px;
+}
+
+.shoe-content {
+  margin-left: 20px;
+}
+
+.shoe img {
+  width: 200px;
+}
