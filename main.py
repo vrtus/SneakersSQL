@@ -3,7 +3,7 @@
 # 1 - on importe les librairies dont on a besoin
 # flask est le framework web
 from flask import Flask, render_template
-# sqlite pour faire du sqlite :ttttttt)
+# sqlite pour faire du sqlite)
 import sqlite3
 
 database_path = "data/shoesstore.sqlite3"
